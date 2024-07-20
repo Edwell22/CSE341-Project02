@@ -1,0 +1,167 @@
+//
+// LOCALHOST
+//
+
+// INFORMATION COLLECTION
+
+### GET ALL INFORMATION RECORDS IN INFORMATION COLLECTION
+GET http://localhost:3000/rectifiers/info
+
+### GET ONE RECORD FROM INFORMATION COLLECTION
+GET http://localhost:3000/rectifiers/info/66806186550efb88c0fbc060
+
+### POST NEW RECORD TO INFORMATION COLLECTION
+POST http://localhost:3000/rectifiers/info HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "REC_SYS01_1004",
+    "manufacturer": "Delete Test",
+    "model": "ASAI",
+    "serialNumber": "3348",
+    "dcVolts": 50,
+    "dcAmps": 40, 
+    "tapSet": "Course-6 - Fine-6"
+}
+
+### UPDATE RECORD IN INFORMATION COLLECTION
+PUT http://localhost:3000/rectifiers/info/6685ac0a6f651c18f1425de9 HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "REC_SYS01_1003",
+    "manufacturer": "Farwest",
+    "model": "DCPro",
+    "serialNumber": "349",
+    "dcVolts": 50,
+    "dcAmps": 50, 
+    "tapSet": "digital"
+}
+
+### DELETE RECORD IN INFORMATION COLLECTION
+DELETE http://localhost:3000/rectifiers/info/6685ad515e5e59844aea0adb HTTP/1.1
+
+//
+// INSPECTION COLLECTION
+//
+
+### GET ALL INSPECTION RECORDS IN INSPECITONS COLLECTION
+GET http://localhost:3000/rectifiers/inspect
+
+### GET ONE INSPECTION RECORD FROM INSPECTIONS COLLECTION
+GET http://localhost:3000/rectifiers/inspect/6680c6af46efc9c7a6accb63
+
+### POST NEW INSPECTION RECORD TO INSPECTIONS COLLECTION
+POST http://localhost:3000/rectifiers/inspect HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "Delete Test",
+    "mdcVolts": 0.58,
+    "mdcAmps": 2.2, 
+    "tapSet": "C1F2",
+    "inspectionDate": "06/20/2024",
+    "comments": "On site inpsection during annual survey",
+    "technician": "David Spahr"
+}
+
+### UPDATE INSPECTION RECORD
+PUT http://localhost:3000/rectifiers/inspect/6680cab167cf34aa63a42ab3 HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "REC_SYS01_1000",
+    "mdcVolts": 8.98,
+    "mdcAmps": 31.25, 
+    "tapSet": "C1F3",
+    "inspectionDate": "06/21/2024",
+    "comments": "On site inspection during annual survey",
+    "technician": "David Spahr"
+}
+
+### DELETE INPSECTION RECORD
+DELETE http://localhost:3000/rectifiers/inspect/6685ae9d5e5e59844aea0add HTTP/1.1
+
+//
+// RENDER SECTION - INFORMATION COLLECTION
+//
+
+### GET ALL INFORMATION RECORDS
+GET https://cse341-wk3-4-prj.onrender.com/rectifiers/info
+
+### GET ONE INFORMATION RECORD
+GET https://cse341-wk3-4-prj.onrender.com/rectifiers/info/66806186550efb88c0fbc060
+
+
+### CREATE INFORMTION RECORD
+POST https://cse341-wk3-4-prj.onrender.com/rectifiers/info HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "REC_SYS01_1004",
+    "manufacturer": "Universal Rectifiers",
+    "model": "ASAI",
+    "serialNumber": "1302153",
+    "dcVolts": 60,
+    "dcAmps": 40, 
+    "tapSet": "Course-3 - Fine-6"
+}
+
+### UPDATE INFORMATION RECORD
+PUT https://cse341-wk3-4-prj.onrender.com/rectifiers/info/66806186550efb88c0fbc060 HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "REC_SYS01_1002",
+    "manufacturer": "Universal Rectifiers",
+    "model": "ASAI",
+    "serialNumber": "1302047",
+    "dcVolts": 60,
+    "dcAmps": 40, 
+    "tapSet": "Course-3 - Fine-6"
+}
+
+### DELETE INFORMATION RECORD
+DELETE https://cse341-wk3-4-prj.onrender.com/rectifiers/info/ HTTP/1.1
+
+//
+// INSPECTION COLLECTION
+//
+
+### GET ALL INSPECTION RECORDS
+GET https://cse341-wk3-4-prj.onrender.com/rectifiers/inspect
+
+### GET ONE INSPECTION RECORD
+GET https://cse341-wk3-4-prj.onrender.com/rectifiers/inspect/6680c6af46efc9c7a6accb63
+
+### CREATE INSPECTION RECORD
+POST https://cse341-wk3-4-prj.onrender.com/rectifiers/inspect HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "DELETE",
+    "mdcVolts": 20.4,
+    "mdcAmps": 30.3,
+    "tapSet": "C2F3",
+    "inspectionDate": "06/28/2024",
+    "comments": "Rectifier in good conditon",
+    "technician": "David Spahr"
+}
+
+### UPDATE INSPECTION RECORD
+PUT https://cse341-wk3-4-prj.onrender.com/rectifiers/inspect/6680c6af46efc9c7a6accb63 HTTP/1.1
+content-type: application/json
+
+{
+    "facilityId": "DELETE",
+    "mdcVolts": 20.4,
+    "mdcAmps": 30.3,
+    "tapSet": "C2F3",
+    "inspectionDate": "07/01/2024",
+    "comments": "Pole needs to be replaced",
+    "technician": "David Spahr"
+}
+
+### DELETE INSPECTION RECORD
+DELETE https://cse341-wk3-4-prj.onrender.com/rectifiers/inspect/6686c16e5f68beeb69934c4e HTTP/1.1
+
