@@ -1,5 +1,5 @@
 {
-  "name": "cse-341-project02",
+  "name": "CSE341-Project02",
   "version": "1.0.0",
   "description": "CRUD",
   "main": "server.js",
@@ -38,5 +38,4 @@
     "swagger-autogen": "^2.23.7"
   },
   "keywords": []
-
 }

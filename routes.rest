@@ -2,7 +2,7 @@
 
 # GET all Movies
 
-GET http://localhost:8000/movies
+GET http://localhost:8000/localhost:8000/movies
 # gets the local database api data
 
 ###
