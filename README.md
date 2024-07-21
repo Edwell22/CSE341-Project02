@@ -1,2 +1,3 @@
-# CSE341-Project02
+# cse-341-project02
+
 CRUD

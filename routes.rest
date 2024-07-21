@@ -1,0 +1,45 @@
+# Local Host------------------------------------------------------
+
+# GET all Movies
+
+GET http://localhost:8000/movies
+# gets the local database api data
+
+###
+
+# GET a single Movie by ID
+
+GET http://localhost:8000/movies/669bbbc0bb6b1ee21cb35546
+# gets the local api data for a single contact
+
+
+###
+
+# POST or Create Movies
+POST http://localhost:8000/movies HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Doctor Strange in the Multiverse of Madness",
+    "release_date":"March 25, 2022",
+    "genre":"Action, Adventure, Fantasy",
+    "director":"Sam Raimi"
+}
+
+###
+
+# PUT or Update Movies by ID
+PUT http://localhost:8000/movies/669bc191bb6b1ee21cb35548 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Wonder Woman 1984",
+    "release_date":"December 25, 2020",
+    "genre":"Action, Adventure, Fantasy",
+    "director":"Patty Jenkins"
+}
+
+###
+
+# DELETE Movies by ID
+DELETE http://localhost:8000/movies/669bc2d6bb6b1ee21cb3554b HTTP/1.1
