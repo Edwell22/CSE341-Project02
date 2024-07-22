@@ -7,7 +7,7 @@ const doc = {
     },
     host: //[
         // 'localhost:8000',
-        'cse341-project02-i0i2.onrender.com',
+        'https://cse341-project02-i0i2.onrender.com',
     //],
     schemes: ['https', 'http']
 };
