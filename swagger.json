@@ -5,7 +5,7 @@
     "description": "API for Movies and Premium Shows",
     "version": "1.0.0"
   },
-  "host": "localhost:8000",
+  "host": "cse341-project02-i0i2.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",

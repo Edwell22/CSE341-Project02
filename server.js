@@ -39,7 +39,7 @@ passport.use(
     {
       clientID: process.env.clientID,
       clientSecret: process.env.clientSecret,
-      callbackURL: process.env.callbackURL || ' http://localhost:8000/github/callback'
+      callbackURL: process.env.callbackURL || ' https://cse341-project02-i0i2.onrender.com/github/callback'
     },
     function (accessToken, refreshToken, profile, done) {
       //User.findOrCreate({ githubId: profile.id }, function (err, user) {
